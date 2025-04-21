@@ -1,6 +1,9 @@
 package org.rhabib.store;
 
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class OrderService {
     private PaymentService paymentService;
 
