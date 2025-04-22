@@ -11,8 +11,8 @@ public class StoreApplication {
 
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(StoreApplication.class, args);
-        NotificationManager bean = context.getBean(NotificationManager.class);
-        bean.sendNotification();
+        OrderService bean = context.getBean(OrderService.class);
+        bean.placeOrder();
 //        OrderService orderService = new OrderService( new PaypalPaymentService());
 
     }
